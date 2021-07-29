@@ -1,0 +1,17 @@
+load('mixture1.mat')
+
+x1 = initialSample;
+x2 = finalSample;
+
+
+y1 = delay{1};
+y2 = y1 + (x2-x1);
+
+figure;
+plot([x1 x2] [y1 y2], 'b');
+
+x1_e = estInitialSample;
+y2 = delay{2};
+y3 = delay{3};
+
+x1_e = est_delay
